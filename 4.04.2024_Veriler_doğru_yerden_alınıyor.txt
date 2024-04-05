@@ -451,7 +451,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	  Pabd 	  = Rx[9] << 8 | Rx[8];
 	  Emg  	  = Rx[7] << 8 | Rx[6];
 	  timeOut = Rx[5] << 8 | Rx[4];
-      time    = Rx[3] << 24 | Rx[2] << 16 | Rx[1] << 8 | Rx[0];
+          time    = Rx[3] << 24 | Rx[2] << 16 | Rx[1] << 8 | Rx[0];
 
 	  HAL_UART_Receive_IT(huart, Rx, RX_DATA_LENGTH);
   }
